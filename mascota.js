@@ -8,10 +8,19 @@ const mascota = {
   // descripción
   describir() {
     return `${this.nombre} es un ${this.tipo}`
+  },
+
+  // alimentar
+  alimentar() {
+    return this.hambre = Math.max(0, this.hambre - 20);
   }
+
   // En las próximas etapas agregarás métodos AQUÍ dentro.
 };
 
 console.log("Mi tamatama se llama:", mascota.nombre, "y es un", mascota["tipo"]);
 
 console.log(mascota.describir());
+
+console.log("Pelusa comió, ahora tiene de hambre:", mascota.alimentar());
+console.log("Pelusa comió, ahora tiene de hambre:", mascota.alimentar());
